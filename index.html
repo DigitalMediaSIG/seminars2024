@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title></title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="vendor/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+ 
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+
+  <style>
+    body {
+	      font-family: 'Montserrat', sans-serif;
+    }
+    h3 {
+      text-align:center;
+      font-size:100%;
+    	color: rgb(100,220,220);
+    	letter-spacing: .5em;
+    }
+    h4 {
+      margin: 0 auto;
+      margin-top: 60px;
+      background-color: black;
+      width: 40%;
+      min-width: 400px;
+      padding: 20px;
+    }
+    .nobul {
+      list-style-type: none;
+      margin-top: 20px;
+    } 
+    .glitch {
+    	color: white;
+    	font-size: 4em;
+    	letter-spacing: .3em;
+    }
+    @media screen and (max-width: 991px) {
+      .glitch {
+    	  font-size: 3em;
+      }
+    }
+    .header-bg {
+      padding: 256px 0 200px !important; 
+      margin-top: -60px;
+      background: linear-gradient(rgba(10,10,10,.4),rgba(0,0,0,.9)), repeating-linear-gradient(0, transparent, transparent 2px, black 3px, black 3px),
+          url('https://images.unsplash.com/photo-1602591151779-e45682f5c232?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=893&q=80');
+      background-position-x: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-y: bottom;
+    }
+    .speaker {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      border-bottom: 2px solid #999;
+    }
+    h1 {
+      text-shadow:1px 1px 0px #f0f, -1px -1px 0 #0ff;
+      font-size:100%;
+      text-align:center;
+      text-shadow:2px 3px 0px #f0f, -2px -2px 0 #0ff;
+      word-wrap: break-word;
+    }
+    h2 {
+      font-size: 2em !important;
+      font-weight: bold;
+    }
+    @media screen and (max-width: 991px) {
+      h2 {
+        font-size: 1.3em !important;
+      }
+    }
+    .btn-warning {
+      color: white !important;
+      border-color: #FF9800;
+      background-color: #FF9800;
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    }
+    .btn-register {
+      color: white !important;
+      background-color: #FF9800;
+      border-color: #FF9800;
+      width: 60%;
+      font-size: 1.2em;
+      padding: 15px;
+      margin: 0 auto;
+      border-radius: 50px;
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    }
+    .same-space {
+      height: 100px;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        color: rgba(255,255,255) !important;
+    }
+    .infobox {
+      border: 3px dashed black;
+      padding: 15px;
+    }
+    @media screen and (min-width: 992px) {
+      #mainNav {
+        background-color: transparent !important;
+      }
+    }
+    .btn-secondary {
+        background-color: transparent;
+        border-color: transparent;
+        outline: none;
+    }
+    .show>.btn-secondary.dropdown-toggle {
+        background-color: transparent;
+        border-color: transparent;
+        outline: none;
+    }
+    .btn-secondary:focus {
+        background-color: transparent;
+        border-color: transparent;
+        outline: none;
+    }
+    .btn-secondary:hover {
+        background-color: transparent;
+        border-color: transparent;
+        outline: none;
+    }
+    .mt-3 {
+        min-width: 100px;
+    }
+    .dropdown-menu {
+        background-color: #000;
+    }
+    .dropdown-item {
+        color: #ffffff;
+    } 
+    </style>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VT0DFRW564"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-VT0DFRW564');
+  </script>
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary static-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Narrative Framing CMSC</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#invitedspeakers">Invited Speakers</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="nav-link btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Digital Media SIG</button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="https://digitalmediasig.github.io">Special Interest Group</a>
+                <a class="dropdown-item" href="https://digitalmediasig.github.io/Mediate2020">Mediate 2020 (ICWSM)</a>
+                <a class="dropdown-item" href="https://digitalmediasig.github.io/Mediate2021">Mediate 2021 (ICWSM)</a>
+		<a class="dropdown-item" href="https://digitalmediasig.github.io/Mediate2022">Mediate 2022 (ICWSM)</a>
+		<a class="dropdown-item" href="https://digitalmediasig.github.io/Mediate2023">Mediate 2023 (ICWSM)</a>
+		<a class="dropdown-item" href="https://digitalmediasig.github.io/misinfoandgenAI/">GenAI - AI UK Fringe 2024</a>
+              </div>
+            </div>
+            </li>  
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white header-bg">
+    <div class="container text-center">
+      <h1 class="glitch">Narrative Framing</h2>
+      <h2 class="glitch">and its linguistic forms in online media</h1>
+      <h3 class="sub">CMSC-2020 Colloquium</h3>
+      <h4 class="sub">11 Dec 2020 - 13.30 GMT</h4>
+    </div>
+  </header>
+
+  <section id="overview">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Overview</h2>
+          <p class="lead">Framing refers to selecting and emphasizing certain aspects of a subject in communicating text, while excluding others in order to induce a cognitive bias. Framing is an important part of what determines how various issues are perceived by the public. The panel will discuss different types of narrative framing used in online media and their intended effect (e.g. propaganda, political frames, scientific frames, journalistic frames), the linguistic means used to convey these (e.g. metaphor, simile, emotive language), and how these could be automatically detected and/or addressed. </p>
+          <p class="lead">The event is taking place online on the <u>11th December 2020 13.30-15.30 GMT</u> as an  <a href="https://cmsc2020.com/invited-colloquia">invited colloquium</a> of the <a href="https://cmsc2020.com/">CMSC conference</a>.</p>
+          <!--<div class="text-center"><a href="https://cmsc2020.com/page14013776.html" class="btn btn-register">Register</a></div>-->
+          <br>
+<!--           <p class="lead"><b>Zoom link:</b> <a href="https://us02web.zoom.us/j/7707603465?pwd=NHM1VGM5c2JBbWlTVGNCcTQzWWUyZz09">https://us02web.zoom.us/j/7707603465?pwd=NHM1VGM5c2JBbWlTVGNCcTQzWWUyZz09</a></p> -->
+        </div>
+      </div>
+    </div>
+  </section>
+	
+  <section id="invitedspeakers" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="mb-5">Invited Speakers</h2>
+
+          <div class="row speaker">
+            <div class="col-md-4 text-center">
+                <img src="assets/kristen.jpg" class="img-center img-fluid shadow shadow-lg--hover img-center img-fluid shadow shadow-lg--hover rounded-circle" style="width: 200px;" alt="image">
+                <br/>
+                <div class="mt-3">
+                  <a href="https://www.cs.purdue.edu/homes/john1187/" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-globe"></i>
+                  </a>
+                  <a href="https://scholar.google.com/citations?user=iHeTIZEAAAAJ&hl=en" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-google"></i>
+                  </a>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="pt-4">
+                  <h5 class="title same-space">
+                    <span class="d-block mb-1">Kristen-Marie Johnson</span>
+                    <small class="h6 text-muted">Michigan State University</small>
+                  </h5>
+                  <h6>Understanding the Effects of Framing in Microblog Discourse</h6>
+                  <p class="h6 text-muted">Framing is a political strategy in which politicians carefully word their statements in order to influence and control public perception and opinion on current sFraming is a political strategy in which politicians carefully word their statements in order to influence and control public perception and opinion on current societal issues. My work analyzes political discourse on social media microblogs and uses Natural Language Processing techniques to understand how framing of current political issues is presented and propagated in social media. My recent works explore ways to leverage online and traditional discourse to automatically identify and predict frames and their trends in underexplored fields, such as economics and the judiciary.  </p>
+                </div>
+            </div>
+          </div>
+
+          <div class="row speaker">
+            <div class="col-md-8">
+                <div class="pt-4">
+                  <h5 class="title same-space">
+                    <span class="d-block mb-1">Katarzyna Molek-Kozakowska</span>
+                    <small class="h6 text-muted">University of Opole, Poland and Vilnius Gediminas Technical University, Lithuania</small>
+                  </h5>
+                  <h6>Framing patterns in science journalism</h6>
+                  <p class="h6 text-muted">Much attention has recently been devoted to finding out how science is presented to the general public, given the economic pressures on science communicators in commercial media on the one hand, and the growing number of channels and outlets for science journalism. The controversies over misrepresentation of GMOs, stem cell research, climate change, or vaccinations testify to some challenges that science popularizers have to face. My research focuses on looking at frames in science journalism from three complementary perspectives: (1) the linguistic resources recruited to frame science in attractive ways, (2) the discursive construction of news values in science journalism, and (3) making science approachable through visual representations. The way science is presented in the media tends to influence the public understanding of science and frame policy deliberation around proposals based on science.</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="assets/Katarzyna.jpg" class="img-center img-fluid shadow shadow-lg--hover img-center img-fluid shadow shadow-lg--hover rounded-circle" style="width: 200px;" alt="image">
+                <br/>
+                <div class="mt-3">
+                  <a href="https://scholar.google.com/citations?user=JGWGL1MAAAAJ&hl=en" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-google"></i>
+                  </a>
+
+                </div>
+            </div> 
+          </div>
+
+          <div class="row speaker">
+            <div class="col-md-4 text-center">
+                <img src="assets/preslav.jpg" class="img-center img-fluid shadow shadow-lg--hover img-center img-fluid shadow shadow-lg--hover rounded-circle" style="width: 200px;" alt="image">
+                <br/>
+                <div class="mt-3">
+                  <a href="https://www.hbku.edu.qa/en/staff/dr-preslav-nakov" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-globe"></i>
+                  </a>
+                  <a href="http://twitter.com/preslav_nakov" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <a href="https://scholar.google.com/citations?user=DfXsKZ4AAAAJ&hl=en" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-google"></i>
+                  </a>
+
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="pt-4">
+                  <h5 class="title same-space">
+                    <span class="d-block mb-1">Preslav Nakov</span>
+                    <small class="h6 text-muted">Qatar Computing Research Institute, HBKU</small>
+                  </h5>
+                  <h6>Spotting the Use of Propaganda Techniques in the News</h6>
+                  <p class="h6 text-muted">When it comes to "fake news", there has been a lot of research focusing on factuality. However, little attention has been paid to the way propaganda is expressed. Revealing the use of specific propaganda techniques can help promote media literacy and critical thinking, thus limiting the impact of "fake news". I will present the <a href="https://www.tanbih.org/prta">Prta system</a>, which can detect 18 such techniques, including emotional manipulation (e.g., appeal to fear, name calling, and loaded language) and logical fallacies (e.g., black & white, red herring, whataboutism). The system got the Best Demo Award (Honorable Mention) at ACL-2020.</p>
+                </div>
+            </div>
+          </div>
+
+          <div class="row speaker">
+            <div class="col-md-8">
+                <div class="pt-4">
+                  <h5 class="title same-space">
+                    <span class="d-block mb-1">Thomas E. Nelson</span>
+                    <small class="h6 text-muted">Ohio State University</small>
+                  </h5>
+                  <h6>Motivated Reframing</h6>
+                  <p class="h6 text-muted">Reframing means changing one's personal issue frame to fend off attacks on one's opinion. While many people simply ignore or deny information that challenges their point of view, reframing provides a way of defending an opinion when these other options won't work. I discuss experimental evidence on reframing, and relate the practice to mass- and social media political communication and interchange.</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="assets/nelson.jpg" class="img-center img-fluid shadow shadow-lg--hover img-center img-fluid shadow shadow-lg--hover rounded-circle" style="width: 200px;" alt="image">
+                <br/>
+                <div class="mt-3">
+                  <a href="https://polisci.osu.edu/people/nelson.179" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-globe"></i>
+                  </a>
+                  <a href="https://scholar.google.com/citations?user=Dl_aypgAAAAJ&hl=en" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-google"></i>
+                  </a>
+                </div>
+            </div>
+          </div>
+
+          <div class="row speaker">
+            <div class="col-md-4 text-center">
+                <img src="assets/resnik.jpg" class="img-center img-fluid shadow shadow-lg--hover img-center img-fluid shadow shadow-lg--hover rounded-circle" style="width: 200px;" alt="image">
+                <br/>
+                <div class="mt-3">
+                  <a href="http://users.umiacs.umd.edu/~resnik/" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-globe"></i>
+                  </a>
+                  <a href="http://twitter.com/psresnik" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <a href="https://scholar.google.com/citations?user=71BFWc0AAAAJ&hl=en" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-google"></i>
+                  </a>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="pt-4">
+                  <h5 class="title same-space">
+                    <span class="d-block mb-1">Philip Resnik</span>
+                    <small class="h6 text-muted">University of Maryland</small>
+                  </h5>
+                  <h6>On the roles of top-down knowledge and bottom-up evidence in computational models of framing.</h6>
+                  <p class="h6 text-muted">In these brief remarks I will discuss computational models of framing. I will suggest that framing can be looked at from the top down (in terms of known or expected categories) and from the bottom up (in terms of categories emerging from observation), and I will highlight computational methods for combining the two perspectives.</p>
+                </div>
+            </div>
+          </div>
+
+          <div class="row speaker" style="border-bottom: none;">
+            <div class="col-md-8">
+                <div class="pt-4">
+                  <h5 class="title same-space">
+                    <span class="d-block mb-1">Dietram A. Scheufele</span>
+                    <small class="h6 text-muted">University of Wisconsin</small>
+                  </h5>
+                  <h6>Framing technology</h6>
+                  <p class="h6 text-muted">Framing and narrative are a key part of how we all see the world. They help us make sense of complex science. But different frames or narratives can also lead to diametrically opposed ways of looking at the same facts. And most troublingly, narratives as a communication tool are agnostic to truth.  What lessons can we draw from what we know about effective framing for a world in which populism and polarization are (again) on the rise?</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="assets/dietram.jpg" class="img-center img-fluid shadow shadow-lg--hover img-center img-fluid shadow shadow-lg--hover rounded-circle" style="width: 200px;" alt="image">
+                <br/>
+                <div class="mt-3">
+                  <a href="https://lsc.wisc.edu/facstaff/scheufele-dietram/" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-globe"></i>
+                  </a>
+                  <a href="http://twitter.com/scheufele" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <a href="https://scholar.google.com/citations?hl=en&user=j2-5w_AAAAAJ&pagesize=100&view_op=list_works" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-google"></i>
+                  </a>
+                </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="organizers">
+    <div class="container">
+      <div class="col-lg-8 mx-auto">
+        <h2 class="mb-5">Organizers</h2>
+        <div class="row">
+          <div class="col-md-4 col-lg-4 mb-5">
+            <div class="px-4 text-center">
+              <img src="assets/helena.jpeg" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;" alt="image">
+              <div class="pt-4 text-center">
+                <h5 class="title same-space">
+                  <span class="d-block mb-1">Elena <br/> Kochkina</span>
+                  <small class="h6 text-muted">Alan Turing Institute</small>
+                </h5>
+                <div>
+                  <a href="http://twitter.com/Elena_Kochkina" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-twitter"></i>
+                  </a>			
+                  <a href="mailto:ekochkina@turing.ac.uk" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 mb-5">
+            <div class="px-4 text-center">
+              <img src="assets/marya.jpg" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;" alt="image">
+              <div class="pt-4 text-center">
+                <h5 class="title same-space">
+                  <span class="d-block mb-1">Marya <br/> Bazzi</span>
+                  <small class="h6 text-muted"> Alan Turing Institute</small>
+                </h5>
+                <div>
+                  <a href="http://twitter.com/maryabazzi" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-twitter"></i>
+                  </a>			
+                  <a href="mailto:mbazzi@turing.ac.uk" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 mb-5">
+            <div class="px-4 text-center">
+              <img src="assets/maria.jpg" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;" alt="image">
+              <div class="pt-4 text-center">
+                <h5 class="title same-space">
+                  <span class="d-block mb-1">Maria <br/> Liakata</span>
+                  <small class="h6 text-muted">Alan Turing Institute</small>
+                </h5>
+                <div>
+                  <a href="http://twitter.com/xrysoflhs" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <a href="mailto:mliakata@turing.ac.uk" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">            
+          <div class="col-md-4 col-lg-4 mb mb-0 ml-auto">
+            <div class="px-4 text-center">
+              <img src="assets/psmeros.jpg" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;" alt="image">
+              <div class="pt-4 text-center" style="margin-bottom: 40px;">
+                <h5 class="title same-space">
+                  <span class="d-block mb-1">Panayiotis <br/> Smeros</span>
+                  <small class="h6 text-muted">EPFL</small>
+                </h5>
+                <div>
+                  <a href="http://twitter.com/psmeros" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <a href="mailto:panayiotis.smeros@epfl.ch" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 mb-0 mr-auto">
+            <div class="px-4 text-center">
+              <img src="assets/jay.jpg" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;" alt="image">
+              <div class="pt-4 text-center">
+                <h5 class="title same-space">
+                  <span class="d-block mb-1">Jérémie <br/> Rappaz</span>
+                  <small class="h6 text-muted">EPFL</small>
+                </h5>
+                <div>
+                  <a href="http://twitter.com/jrappaz" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <a href="mailto:jeremie.rappaz@epfl.ch" class="btn btn-warning btn-icon-only rounded-circle">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-primary">
+    <div class="container">
+      <p class="m-0 text-center text-white">To find out about more events sign up to <a href="https://tinyurl.com/mediasigsignup">our mailing list</a> and follow us on <a href="https://twitter.com/DigitalMediaSIG">Twitter</a>!</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
